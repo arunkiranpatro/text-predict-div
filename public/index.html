@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>text prediction div</title>
+        <link rel="stylesheet" href="SmartTextArea.css"/>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    </head>
+    <body>
+        <h1>Text prediction</h1>
+        <div class="pp-text-predictor-wrapper">
+            <div class="pp-text-predictor"  contenteditable="true" data-placeholder="Predict tect"  
+               onkeydown="SmartTextArea.predictText(event)" 
+               onkeyup="SmartTextArea.updateCharCounter(event)" 
+            onblur= "SmartTextArea.copyTextToHidden(event)"></div>
+            <input type="hidden" class="pp-text-predictor-value" />
+            <span class="char-counter">
+                Remaining:
+                <span class="char-counter-value">
+                100
+                </span>
+                characters
+                </span>
+            </div>
+            <script type="text/javascript" src="SmartTextArea.js"></script>
+    </body>
+</html>
