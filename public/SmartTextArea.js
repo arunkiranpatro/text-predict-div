@@ -80,7 +80,7 @@ var SmartTextArea = (function() {
          type: "POST",
          url: "/predict",
          data: paramsStr,
-         contentType: "application/json; charset=utf-8",
+         contentType: "application/json",
          dataType: "json",
          success: successCallback
      });
