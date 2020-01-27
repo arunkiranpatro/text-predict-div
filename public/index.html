@@ -7,7 +7,7 @@
     <body>
         <h1>Text prediction</h1>
         <div class="pp-text-predictor-wrapper">
-            <div class="pp-text-predictor"  contenteditable="true" data-placeholder="Predict tect"  
+            <div class="pp-text-predictor"  contenteditable="true" data-placeholder="Predict tect"  data-maxchars="100"
                onkeydown="SmartTextArea.predictText(event)" 
                onkeyup="SmartTextArea.updateCharCounter(event)" 
             onblur= "SmartTextArea.copyTextToHidden(event)"></div>
